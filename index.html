@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="static/js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <title>Drift Org Setting Search by Embed ID</title>
+</head>
+<body>
+    <label for="embedInput">Insert embedId: </label><input type="text" id="embedInput">
+    <button type="button" id="myBtn" onclick="getOrgDetails(embedInput.value)">Submit</button>
+    <section>
+        <h1>Drift Widget Details</h1>
+        <table id="table">
+            <tr>
+                <th>Org ID</th>
+                <th>Company Name</th>
+                <th>Campaigns</th>
+                <th>Audience</th>
+                <th>URL Whitelist</th>
+                <th>Cookie Domains</th>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
